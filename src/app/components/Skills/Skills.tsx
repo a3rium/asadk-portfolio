@@ -1,6 +1,7 @@
 import { skills } from "@/app/data/skills";
 import React, { FC } from "react";
 import SkillCard from "../SkillCard/SkillCard";
+import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -16,15 +17,17 @@ const Skills = () => {
         </div>
         <div className="mx-8 flex flex-wrap gap-10 justify-between items-center text-white">
           <div className="mx-auto">
-            <img
+            <Image
               className="max-w-[80%] mx-auto"
               src="/motifs/tree-circuits.png"
+              height={100}
+              width={100}
               alt=""
             />
           </div>
           <div className="mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4">
             {skills.map((skill) => {
-              return <SkillCard skillProps={skill} />;
+              return <SkillCard key={skill.id} skillProps={skill} />;
             })}
           </div>
         </div>

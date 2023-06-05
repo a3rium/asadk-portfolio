@@ -1,4 +1,5 @@
 import { Project } from "@/app/types/Project";
+import Image from "next/image";
 import React, { FC, HTMLAttributes } from "react";
 
 interface ProjectProps {
@@ -14,11 +15,21 @@ const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
           ${className}`}
       >
         <div className="">
-          <img className="w-full" src={projectProps.img_path} alt="" />
+          <Image
+            className="w-full"
+            src={projectProps.img_path}
+            alt=""
+            width={100}
+            height={100}
+          />
         </div>
         <div className="flex gap-2 flex-wrap p-2 border-y border-primary">
           {projectProps.languages.map((e) => {
-            return <span className=" text-primary">{e}</span>;
+            return (
+              <span key={e} className="text-primary">
+                {e}
+              </span>
+            );
           })}
         </div>
         <div className="p-4">

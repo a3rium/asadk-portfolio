@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -5,7 +6,12 @@ const Hero = () => {
     <>
       <div className="w-screen relative">
         <div className="absolute right-0 top-[20%] hidden md:block -z-10">
-          <img src="/motifs/circuit-1.png" className="max-h-32"></img>
+          <Image
+            src="/motifs/circuit-1.png"
+            alt="circuit motif"
+            width={100}
+            height={100}
+          />
         </div>
         <div className="px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
           <div className="w-10/12 sm:w-8/12 mx-auto">
@@ -24,8 +30,10 @@ const Hero = () => {
           {/* TODO: Add image of me */}
           <div className="mx-auto py-2">
             <div className="">
-              <img
+              <Image
                 src={"https://via.placeholder.com/300x150"}
+                width={100}
+                height={100}
                 alt="Headshot of Asad"
               />
             </div>
@@ -39,7 +47,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute left-0 bottom-[10%] hidden md:block -z-10">
-          <img src="/motifs/circuit-2.png" className="max-h-24"></img>
+          <Image
+            src="/motifs/circuit-2.png"
+            width={100}
+            height={100}
+            alt="circuit motif"
+          />
         </div>
       </div>
     </>

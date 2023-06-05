@@ -22,7 +22,7 @@ const Projects = () => {
         </div>
         <div className="flex flex-wrap justify-between mx-8 my-8">
           {showcase.map((project) => {
-            return <ProjectCard projectProps={project} />;
+            return <ProjectCard key={project.id} projectProps={project} />;
           })}
         </div>
       </div>

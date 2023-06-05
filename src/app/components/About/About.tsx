@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -38,16 +39,23 @@ const About = () => {
             </div>
             <div className="mx-auto">
               {/* TODO: Add photo */}
-              <img
+              <Image
                 className="mx-auto py-4"
                 src="https://via.placeholder.com/300x150"
+                height={300}
+                width={300}
                 alt="Photo of me"
               />
             </div>
           </div>
         </div>
         <div className="absolute right-0 bottom-[10%] hidden md:block -z-20">
-          <img src="/motifs/circuit-3.png" className="max-h-24"></img>
+          <Image
+            src="/motifs/circuit-3.png"
+            alt="circuit motif"
+            width={150}
+            height={150}
+          />
         </div>
       </div>
     </>

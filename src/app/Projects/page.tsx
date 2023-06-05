@@ -21,7 +21,13 @@ const Projects = () => {
         </div>
         <div className="flex flex-row flex-wrap content-start ml-8 my-8">
           {completed.map((project) => {
-            return <ProjectCard className="" projectProps={project} />;
+            return (
+              <ProjectCard
+                key={project.id}
+                className=""
+                projectProps={project}
+              />
+            );
           })}
         </div>
       </div>

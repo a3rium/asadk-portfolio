@@ -14,7 +14,7 @@ const SkillCard: FC<SkillProps> = ({ skillProps }) => {
         </div>
         <div className="flex gap-2 border-t border-primary flex-wrap p-2 text-primary">
           {skillProps.technologies.map((item) => {
-            return <span>{item}</span>;
+            return <span key={item}>{item}</span>;
           })}
         </div>
       </div>
