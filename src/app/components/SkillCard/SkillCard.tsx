@@ -1,14 +1,20 @@
 import { Skill } from "@/app/types/Skill";
-import React, { FC } from "react";
+import React, { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface SkillProps {
   skillProps: Skill;
+  className?: HTMLAttributes<HTMLDivElement>["className"];
 }
 
-const SkillCard: FC<SkillProps> = ({ skillProps }) => {
+const SkillCard: FC<SkillProps> = ({ className, skillProps }) => {
+  const classes = twMerge(
+    `basis-[90%] sm:basis-[45%] lg:basis-[30%] border border-primary`,
+    className
+  );
   return (
     <>
-      <div className="w-[90%] sm:w-[45%] lg:w-[30%] border border-primary">
+      <div className={classes}>
         <div className="p-2">
           <h2 className="font-semibold">{skillProps.title}</h2>
         </div>

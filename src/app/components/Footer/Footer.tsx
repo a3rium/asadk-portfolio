@@ -23,24 +23,24 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <a href="#">
                 <Image
-                  width={50}
-                  height={50}
+                  width={32}
+                  height={32}
                   src={"/icons/Discord.png"}
                   alt="Discord"
                 />
               </a>
               <a href="#">
                 <Image
-                  width={50}
-                  height={50}
+                  width={32}
+                  height={32}
                   src={"/icons/Email.png"}
                   alt="Email"
                 />
               </a>
               <a href="#">
                 <Image
-                  width={50}
-                  height={50}
+                  width={32}
+                  height={32}
                   src={"/icons/Github.png"}
                   alt="Github"
                 />

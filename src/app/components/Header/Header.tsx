@@ -14,24 +14,24 @@ const Header = () => {
               <Image
                 src="/icons/Discord.png"
                 alt="Discord"
-                width={20}
-                height={20}
+                width={28}
+                height={28}
               />
             </div>
             <div className="flex gap-1 flex-item">
               <Image
                 src="/icons/Github.png"
                 alt="Github"
-                width={20}
-                height={20}
+                width={28}
+                height={28}
               />
             </div>
             <div className="flex gap-1 flex-item">
               <Image
                 src="/icons/Email.png"
                 alt="Email"
-                width={20}
-                height={20}
+                width={28}
+                height={28}
               />
             </div>
           </div>

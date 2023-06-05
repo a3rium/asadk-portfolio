@@ -5,9 +5,9 @@ const About = () => {
   return (
     <>
       <div className="relative w-screen">
-        <div className="px-5 max-w-screen-2xl mx-auto mt-20 py-10">
-          <div className="flex-wrap flex items-center justify-between">
-            <div className="md:w-5/12 w-full mx-8">
+        <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
+          <div className="mx-8 flex-wrap flex items-center justify-between">
+            <div className="md:w-5/12 w-full">
               <div className="mb-12">
                 <div className="text-white font-medium text-4xl flex items-center gap-2">
                   <div className="">

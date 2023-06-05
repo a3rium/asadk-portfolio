@@ -32,8 +32,8 @@ const Hero = () => {
             <div className="">
               <Image
                 src={"https://via.placeholder.com/300x150"}
-                width={100}
-                height={100}
+                width={300}
+                height={150}
                 alt="Headshot of Asad"
               />
             </div>
@@ -50,7 +50,7 @@ const Hero = () => {
           <Image
             src="/motifs/circuit-2.png"
             width={100}
-            height={100}
+            height={150}
             alt="circuit motif"
           />
         </div>

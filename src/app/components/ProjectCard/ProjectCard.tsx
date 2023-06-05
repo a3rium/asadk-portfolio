@@ -1,6 +1,7 @@
 import { Project } from "@/app/types/Project";
 import Image from "next/image";
 import React, { FC, HTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ProjectProps {
   projectProps: Project;
@@ -8,19 +9,20 @@ interface ProjectProps {
 }
 
 const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
+  const classes = twMerge(
+    `border sm:basis-[90%] md:basis-[48%] lg:basis-[30%] border-primary mx-2 my-2`,
+    className
+  );
   return (
     <>
-      <div
-        className={`border sm:basis-[90%] md:basis-[48%] lg:basis-[30%] border-primary mx-2 my-2
-          ${className}`}
-      >
+      <div className={classes}>
         <div className="">
           <Image
             className="w-full"
             src={projectProps.img_path}
             alt=""
-            width={100}
-            height={100}
+            width={300}
+            height={150}
           />
         </div>
         <div className="flex gap-2 flex-wrap p-2 border-y border-primary">
