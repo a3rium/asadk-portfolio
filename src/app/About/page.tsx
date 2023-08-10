@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 import Image from "next/image";
 import SkillCard from "../components/SkillCard/SkillCard";
 import { hobbies, skills } from "../data/about";
-import HobbyCard from "../components/HobbyCard";
+import HobbyCard from "../components/HobbyCard/HobbyCard";
 
 const About = () => {
   return (
