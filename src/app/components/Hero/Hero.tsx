@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="w-screen relative">
+      <div className="w-full relative">
         <div className="absolute right-0 top-[20%] hidden md:block -z-10">
           <Image
             src="/motifs/circuit-1.png"

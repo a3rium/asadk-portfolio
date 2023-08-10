@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="relative w-screen">
+      <div className="relative w-full">
         <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
           <div className="mx-8 flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">

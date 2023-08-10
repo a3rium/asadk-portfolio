@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <Header />
       <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
-        <div className="flex-flex-col mx-8">
+        <div className="flex flex-col mx-8">
           <div className="text-white font-medium text-4xl">
             <span className="text-secondary">/</span>contact-me
           </div>
