@@ -103,7 +103,7 @@ const ContactForm = () => {
             type="submit"
             className="text-secondary ring-1 ring-secondary hover:bg-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
-            Submit Form
+            Submit
           </button>
         </div>
       </form>
