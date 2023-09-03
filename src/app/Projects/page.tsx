@@ -9,10 +9,10 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <div className="px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
-        {/* TODO: Hero section with carousel of projects */}
+      {/* <div className="px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
+        TODO: Hero section with carousel of projects
         HERO - Project Carousel
-      </div>
+      </div> */}
 
       <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
         <div className="flex flex-col mx-8">
