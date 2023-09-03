@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import { completed } from "@/app/data/projects";
+import { play_pen } from "@/app/data/projects";
 
 const Projects = () => {
   return (
@@ -37,7 +38,7 @@ const Projects = () => {
             <span className="text-secondary">#</span>play-pen
           </div>
           <div className="flex flex-wrap justify-between">
-            {completed.map((project) => {
+            {play_pen.map((project) => {
               return (
                 <ProjectCard
                   key={project.id}

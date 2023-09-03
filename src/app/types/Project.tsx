@@ -3,5 +3,7 @@ export type Project = {
   img_path: string;
   languages: string[];
   title: string;
-  discription: string;
+  description: string;
+  repo: string;
+  link: string;
 };
