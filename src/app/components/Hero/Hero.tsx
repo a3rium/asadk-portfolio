@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,9 +24,12 @@ const Hero = () => {
             <p className="text-primary my-6">
               He builds impactful solutions where technologies meet creativity.
             </p>
-            <button className="text-white font-medium py-2 px-4 border duration-200 border-secondary hover:bg-secondary/30">
+            <Link
+              href="/Contact"
+              className="text-white font-medium py-2 px-4 border duration-200 border-secondary hover:bg-secondary/30"
+            >
               Hire me!
-            </button>
+            </Link>
           </div>
           {/* TODO: Add image of me */}
           <div className="mx-auto py-2">
