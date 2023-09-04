@@ -23,12 +23,12 @@ const Projects = () => {
           <div className="text-white font-medium text-3xl mt-10">
             <span className="text-secondary">#</span>completed-projects
           </div>
-          <div className="flex flex-wrap justify-between">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {completed.map((project) => {
               return (
                 <ProjectCard
                   key={project.id}
-                  className="sm:basis-[45%] md:basis-[30%] lg:basis-[23%]"
+                  className=""
                   projectProps={project}
                 />
               );
@@ -37,12 +37,12 @@ const Projects = () => {
           <div className="text-white font-medium text-3xl mt-10">
             <span className="text-secondary">#</span>play-pen
           </div>
-          <div className="flex flex-wrap justify-between">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {play_pen.map((project) => {
               return (
                 <ProjectCard
                   key={project.id}
-                  className="sm:basis-[45%] md:basis-[30%] lg:basis-[23%]"
+                  className=""
                   projectProps={project}
                 />
               );

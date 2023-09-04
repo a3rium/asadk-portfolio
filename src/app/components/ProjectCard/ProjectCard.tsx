@@ -11,7 +11,7 @@ interface ProjectProps {
 
 const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
   const classes = twMerge(
-    `border sm:basis-[90%] md:basis-[48%] lg:basis-[30%] border-primary mx-2 my-2 flex flex-col`,
+    `border border-primary mx-2 my-2 flex flex-col`,
     className
   );
   return (
