@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/app/components/ui/tooltip";
 
 interface ProjectProps {
   projectProps: Project;
@@ -45,41 +51,57 @@ const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
         <div className="flex flex-row justify-end gap-2 m-2">
           <div className="">
             {projectProps.link.length > 0 && (
-              <div className="py-2 px-4 text-white border border-secondary hover:bg-secondary/30 duration-150">
-                <Link
-                  href={projectProps.link}
-                  title="Live Link"
-                  target="_blank"
-                  className=""
-                >
-                  <Image
-                    className=""
-                    width={32}
-                    height={32}
-                    src={"/icons/Live.png"}
-                    alt="Live Link"
-                  />
-                </Link>
-              </div>
+              <TooltipProvider delayDuration={150}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="py-2 px-4 text-white border border-secondary hover:bg-secondary/30 duration-150">
+                      <Link
+                        href={projectProps.link}
+                        target="_blank"
+                        className=""
+                      >
+                        <Image
+                          className=""
+                          width={32}
+                          height={32}
+                          src={"/icons/Live.png"}
+                          alt="Live Link"
+                        />
+                      </Link>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Live Link</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             )}
           </div>
           <div className="">
             {projectProps.repo.length > 0 && (
-              <div className="py-2 px-4 text-white border border-secondary hover:bg-secondary/30 duration-150">
-                <Link
-                  href={projectProps.repo}
-                  title="Repo Link"
-                  target="_blank"
-                  className=""
-                >
-                  <Image
-                    width={32}
-                    height={32}
-                    src={"/icons/Github.png"}
-                    alt="Repo Link"
-                  />
-                </Link>
-              </div>
+              <TooltipProvider delayDuration={150}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="py-2 px-4 text-white border border-secondary hover:bg-secondary/30 duration-150">
+                      <Link
+                        href={projectProps.repo}
+                        target="_blank"
+                        className=""
+                      >
+                        <Image
+                          width={32}
+                          height={32}
+                          src={"/icons/Github.png"}
+                          alt="Repo Link"
+                        />
+                      </Link>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Repo Link</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             )}
           </div>
         </div>
