@@ -10,13 +10,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../ui/tooltip";
+import { copyToClipboard } from "@/lib/utils";
 
 const Header = () => {
   const { toast } = useToast();
 
-  function copyToClipboard(someText: string) {
-    navigator.clipboard.writeText(someText);
-  }
+  // function copyToClipboard(someText: string) {
+  //   navigator.clipboard.writeText(someText);
+  // }
 
   return (
     <>
