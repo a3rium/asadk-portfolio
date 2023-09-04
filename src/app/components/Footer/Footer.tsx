@@ -1,7 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
+import { copyToClipboard } from "@/lib/utils";
+import { useToast } from "../ui/use-toast";
 
 const Footer = () => {
+  const { toast } = useToast();
+
   return (
     <>
       <div className="w-full h-px bg-secondary mt-20 mb-8"></div>
@@ -21,35 +33,72 @@ const Footer = () => {
           <div className=" mx-auto md:mx-0">
             <h2 className="text-white text-2xl font-medium mb-3">Contact</h2>
             <div className="flex items-center gap-2">
-              <a href="#">
-                <Image
-                  width={32}
-                  height={32}
-                  src={"/icons/Discord.png"}
-                  alt="Discord"
-                />
-              </a>
-              <a href="#">
-                <Image
-                  width={32}
-                  height={32}
-                  src={"/icons/Email.png"}
-                  alt="Email"
-                />
-              </a>
-              <a href="#">
-                <Image
-                  width={32}
-                  height={32}
-                  src={"/icons/Github.png"}
-                  alt="Github"
-                />
-              </a>
+              <TooltipProvider delayDuration={150}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button
+                      onClick={() => {
+                        toast({
+                          description: "Username copied!",
+                        });
+                        copyToClipboard("a3rium");
+                      }}
+                    >
+                      <Image
+                        width={32}
+                        height={32}
+                        src={"/icons/Discord.png"}
+                        alt="Discord"
+                      />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Copy Discord Username</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button
+                      onClick={() => {
+                        toast({
+                          description: "Email address copied!",
+                        });
+                        copyToClipboard("asadkothawala97@gmail.com");
+                      }}
+                    >
+                      <Image
+                        width={32}
+                        height={32}
+                        src={"/icons/Email.png"}
+                        alt="Email"
+                      />
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Copy Email Address</p>
+                  </TooltipContent>
+                </Tooltip>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link href="https://github.com/a3rium/">
+                      <Image
+                        width={32}
+                        height={32}
+                        src={"/icons/Github.png"}
+                        alt="Github"
+                      />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Github Profile Link</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           </div>
         </div>
-        <div className="text-right text-primary pb-4 mt-12">
-          © Copyright 2022. Made by Asad Kothawala.
+        <div className="text-right text-primary pb-4 mt-8">
+          Made by Asad Kothawala.
         </div>
       </div>
     </>
