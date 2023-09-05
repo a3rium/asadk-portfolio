@@ -53,6 +53,7 @@ const Header = () => {
                 <TooltipTrigger asChild>
                   <Link
                     href={"https://github.com/a3rium/"}
+                    target="_blank"
                     className="flex gap-1 flex-item"
                   >
                     <Image
@@ -65,6 +66,25 @@ const Header = () => {
                 </TooltipTrigger>
                 <TooltipContent side="right">
                   <p>Github Profile Link</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link
+                    href={"https://www.linkedin.com/in/asadkoths/"}
+                    target="_blank"
+                    className="flex gap-1 flex-item"
+                  >
+                    <Image
+                      src="/icons/Linkedin.png"
+                      alt="LinkedIn"
+                      width={28}
+                      height={28}
+                    />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent side="right">
+                  <p>LinkedIn Profile Link</p>
                 </TooltipContent>
               </Tooltip>
               <Tooltip>
