@@ -15,7 +15,7 @@ const HobbyCard: FC<HobbyProps> = ({ className, hobbyProps }) => {
   return (
     <>
       <div className={classes}>
-        <div className="flex gap-2 border-t border-primary flex-wrap p-2 text-primary">
+        <div className="flex gap-2 border-t border-primary flex-wrap p-2 text-primary text-base md:text-lg">
           {hobbyProps.title}
         </div>
       </div>

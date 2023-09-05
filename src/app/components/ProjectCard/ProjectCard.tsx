@@ -42,10 +42,12 @@ const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
           })}
         </div>
         <div className="p-4">
-          <h2 className="text-white text-2xl font-medium">
+          <h2 className="text-white text-xl md:text-2xl font-medium">
             {projectProps.title}
           </h2>
-          <p className="py-4 text-primary">{projectProps.description}</p>
+          <p className="py-4 text-primary text-base md:text-lg">
+            {projectProps.description}
+          </p>
         </div>
         <div className="grow"></div>
         <div className="flex flex-row justify-end gap-2 m-2">

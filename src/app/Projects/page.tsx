@@ -16,11 +16,11 @@ const Projects = () => {
 
       <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
         <div className="flex flex-col mx-8">
-          <div className="text-white font-medium text-4xl">
+          <div className="text-white font-medium text-3xl md:text-4xl">
             <span className="text-secondary">/</span>projects
           </div>
 
-          <div className="text-white font-medium text-3xl mt-10">
+          <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>completed-projects
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -34,7 +34,7 @@ const Projects = () => {
               );
             })}
           </div>
-          <div className="text-white font-medium text-3xl mt-10">
+          <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>play-pen
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         {pages.map((page) => (
           <Link key={page.id} href={page.path}>
-            <li className="text-primary active:text-white text-4xl my-4 list-none mx-4 md:my-auto md:text-base">
+            <li className="text-primary active:text-white text-4xl md:text-lg my-4 list-none mx-2 lg:mx-4 md:my-auto ">
               <span className="text-secondary font-medium">#</span>
               {page.name}
             </li>

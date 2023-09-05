@@ -16,17 +16,17 @@ const Hero = () => {
         </div>
         <div className="px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
           <div className="w-10/12 sm:w-8/12 mx-auto">
-            <h1 className="font-semibold text-4xl text-white mb-3">
+            <h1 className="font-semibold text-2xl md:text-3xl text-white mb-3">
               Asad is a{" "}
               <span className="text-secondary">software developer</span> and{" "}
               <span className="text-secondary">web designer</span>
             </h1>
-            <p className="text-primary my-6">
+            <p className="text-primary my-6 text-base md:text-lg">
               He builds impactful solutions where technologies meet creativity.
             </p>
             <Link
               href="/Contact"
-              className="text-white font-medium py-2 px-4 border duration-200 border-secondary hover:bg-secondary/30"
+              className="text-white font-medium text-base md:text-lg py-2 px-4 border duration-200 border-secondary hover:bg-secondary/30"
             >
               Hire me!
             </Link>
@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
             <div className="border flex items-center gap-2 border-primary p-2 text-primary">
               <div className="w-4 h-4 bg-secondary"></div>
-              <div className="">
+              <div className="text-base md:text-lg">
                 Currently working on{" "}
                 <span className="text-white">Portfolio</span>
               </div>

@@ -112,8 +112,8 @@ const Header = () => {
               </Tooltip>
             </TooltipProvider>
           </div>
-          <div className="px-5 max-w-screen-2xl pl-10 mx-auto flex items-center justify-between pt-3 my-1">
-            <div className="left flex items-center font-bold text-white text-3xl">
+          <div className="px-7 max-w-screen-2xl mx-auto flex items-center justify-between pt-3 my-1">
+            <div className="left flex items-center font-bold text-white text-3xl md:text-4xl lg:text-5xl">
               <span className="text-secondary font-medium px-1">[</span>Asad
               <span className="text-secondary font-medium px-1">]</span>K
               <span className="hidden md:block">othawala</span>

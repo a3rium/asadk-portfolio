@@ -9,14 +9,14 @@ const About = () => {
           <div className="mx-8 flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">
               <div className="mb-12">
-                <div className="text-white font-medium text-4xl flex items-center gap-2">
+                <div className="text-white font-medium text-2xl md:text-3xl flex items-center gap-2">
                   <div className="">
                     <span className="text-secondary">#</span>about-me
                   </div>
                   <div className="line flex-grow h-px bg-secondary"></div>
                 </div>
               </div>
-              <p className="text-primary ">
+              <p className="text-primary text-base md:text-lg">
                 Hello, I’m Asad!
                 <br />
                 <br />
@@ -31,7 +31,7 @@ const About = () => {
               <div className="mt-7">
                 <a
                   href="#"
-                  className="duration-150 hover:bg-secondary/30 border border-secondary px-4 py-2 text-white"
+                  className="duration-150 hover:bg-secondary/30 border border-secondary px-4 py-2 text-white text-base md:text-lg"
                 >
                   <button>Read more -{">"}</button>
                 </a>

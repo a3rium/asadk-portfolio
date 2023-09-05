@@ -14,13 +14,13 @@ const About = () => {
         <div className="flex-wrap flex items-center justify-between mx-8">
           <div className="md:w-5/12 w-full">
             <div className="mb-12">
-              <div className="text-white font-medium text-4xl">
+              <div className="text-white font-medium text-3xl md:text-4xl">
                 <div className="">
                   <span className="text-secondary">/</span>about
                 </div>
               </div>
             </div>
-            <p className="text-primary ">
+            <p className="text-primary text-base md:text-lg">
               Hello, I’m Asad!
               <br />
               <br />
@@ -45,7 +45,7 @@ const About = () => {
           </div>
           <div className="mx-auto mt-20">
             <div className="mb-10">
-              <div className=" text-white font-medium text-4xl">
+              <div className=" text-white font-medium text-2xl md:text-3xl">
                 <div className="">
                   <span className="text-secondary">#</span>skills
                 </div>
@@ -61,7 +61,7 @@ const About = () => {
           </div>
           <div className="w-full mt-20">
             <div className="mb-10">
-              <div className=" text-white font-medium text-4xl">
+              <div className=" text-white font-medium text-2xl md:text-3xl">
                 <div className="">
                   <span className="text-secondary">#</span>hobbies
                 </div>

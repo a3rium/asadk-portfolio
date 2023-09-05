@@ -21,17 +21,21 @@ const Footer = () => {
         <div className="flex justify-between gap-y-10 flex-wrap">
           <div className="mx-auto md:mx-0">
             <div className="flex items-center gap-8 mb-3 ">
-              <div className="flex gap-2 items-center text-2xl text-white font-bold">
+              <div className="flex gap-2 items-center text-xl md:text-2xl text-white font-bold">
                 <span>Asad</span>
               </div>
-              <span className="text-primary">asadkothawala97@gmail.com</span>
+              <span className="text-primary text-sm md:text-base">
+                asadkothawala97@gmail.com
+              </span>
             </div>
-            <div className="text-white">
+            <div className="text-white text-sm md:text-base">
               <p>Software developer and web-designer based in Canada.</p>
             </div>
           </div>
-          <div className=" mx-auto md:mx-0">
-            <h2 className="text-white text-2xl font-medium mb-3">Contact</h2>
+          <div className="mx-auto md:mx-0">
+            <h2 className="text-white text-center text-lg md:text-xl font-medium mb-3">
+              Contact
+            </h2>
             <div className="flex items-center gap-2">
               <TooltipProvider delayDuration={150}>
                 <Tooltip>
@@ -116,7 +120,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-right text-primary pb-4 mt-8">
+        <div className="text-right text-primary text-xs md:text-sm pb-4 mt-8">
           Made by Asad Kothawala.
         </div>
       </div>
