@@ -10,8 +10,8 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
-        <div className="flex-wrap flex items-center justify-between mx-8">
+      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+        <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
           <div className="md:w-5/12 w-full">
             <div className="mb-12">
               <div className="text-white font-medium text-3xl md:text-4xl">

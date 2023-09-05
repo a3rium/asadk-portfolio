@@ -14,7 +14,7 @@ const Hero = () => {
             height={100}
           />
         </div>
-        <div className="px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
+        <div className="sm:px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
           <div className="w-10/12 sm:w-8/12 mx-auto">
             <h1 className="font-semibold text-2xl md:text-3xl text-white mb-3">
               Asad is a{" "}

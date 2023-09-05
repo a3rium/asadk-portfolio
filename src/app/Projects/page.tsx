@@ -14,8 +14,8 @@ const Projects = () => {
         HERO - Project Carousel
       </div> */}
 
-      <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
-        <div className="flex flex-col mx-8">
+      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+        <div className="md:px-14 mx-8 flex flex-col">
           <div className="text-white font-medium text-3xl md:text-4xl">
             <span className="text-secondary">/</span>projects
           </div>

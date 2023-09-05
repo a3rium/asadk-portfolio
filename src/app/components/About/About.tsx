@@ -5,8 +5,8 @@ const About = () => {
   return (
     <>
       <div className="relative w-full">
-        <div className="px-10 max-w-screen-2xl mx-auto mt-20 py-10">
-          <div className="mx-8 flex-wrap flex items-center justify-between">
+        <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+          <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">
               <div className="mb-12">
                 <div className="text-white font-medium text-2xl md:text-3xl flex items-center gap-2">
@@ -37,7 +37,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto pt-4">
               {/* TODO: Add photo */}
               <Image
                 className="mx-auto py-4"
