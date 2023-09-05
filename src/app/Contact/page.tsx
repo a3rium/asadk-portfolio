@@ -13,7 +13,7 @@ const Contact = () => {
             <span className="text-secondary">/</span>contact-me
           </div>
           <div className="text-white font-medium text-2xl md:text-3xl mt-10">
-            <span className="text-secondary">#</span>socials
+            <span className="text-secondary">#</span>say-hi!
           </div>
           <div className="pt-5">
             <ContactForm />
