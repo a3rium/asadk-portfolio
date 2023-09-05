@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -29,12 +30,12 @@ const About = () => {
                 Solutions & Services (P) Ltd.
               </p>
               <div className="mt-7">
-                <a
-                  href="#"
+                <Link
+                  href={"/About"}
                   className="duration-150 hover:bg-secondary/30 border border-secondary px-4 py-2 text-white text-base md:text-lg"
                 >
                   <button>Read more -{">"}</button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mx-auto pt-4">
