@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const titles: string[] = [
   "web designer",
@@ -13,17 +13,22 @@ const titles: string[] = [
 let titleLength: number;
 
 const Typewriter = () => {
-  const [title, setTitle] = useState(titles[0]);
+  const [title, setTitle] = useState<string>();
   const picker = useRef(0);
 
   function changeTitle() {
     let timer: number;
-    const index = Math.floor(Math.random() * titles.length);
-    console.log(index);
-    let newTitle = titles[index];
+    let newTitle: string;
+    let lastTitle: string = "";
+    do {
+      const index = Math.floor(Math.random() * titles.length);
+      newTitle = titles[index];
+    } while (newTitle === lastTitle);
     titleLength = newTitle.length;
     timer = titleLength * 400;
     setTitle(newTitle);
+    lastTitle = newTitle;
+    // console.log(newTitle);
     picker.current = window.setTimeout(changeTitle, timer);
   }
 
