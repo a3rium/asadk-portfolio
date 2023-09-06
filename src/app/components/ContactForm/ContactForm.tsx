@@ -1,7 +1,10 @@
 "use client";
 import React, { FormEvent } from "react";
+import { useToast } from "../ui/use-toast";
 
 const ContactForm = () => {
+  const { toast } = useToast();
+
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
@@ -13,8 +16,6 @@ const ContactForm = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    // console.log(json);
-
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -25,7 +26,16 @@ const ContactForm = () => {
     });
     const result = await response.json();
     if (result.success) {
-      console.log(result);
+      toast({
+        title: "Success!",
+        description: "Your message has been sent.",
+      });
+    } else {
+      toast({
+        title: "Error!",
+        description:
+          "Sorry! Something went wrong. Please send me a message on one of my socials instead.",
+      });
     }
   }
 
