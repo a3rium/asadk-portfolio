@@ -15,11 +15,11 @@ let titleLength: number;
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
   const picker = useRef(0);
+  let lastTitle: string = "";
 
   function changeTitle() {
     let timer: number;
     let newTitle: string;
-    let lastTitle: string = "";
     do {
       const index = Math.floor(Math.random() * titles.length);
       newTitle = titles[index];
@@ -28,7 +28,7 @@ const Typewriter = () => {
     timer = titleLength * 400;
     setTitle(newTitle);
     lastTitle = newTitle;
-    // console.log(newTitle);
+    console.log(newTitle);
     picker.current = window.setTimeout(changeTitle, timer);
   }
 
