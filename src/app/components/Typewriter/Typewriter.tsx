@@ -17,7 +17,6 @@ const Typewriter = () => {
   const picker = useRef(0);
 
   function changeTitle() {
-    window.clearTimeout(picker.current);
     let timer: number;
     const index = Math.floor(Math.random() * titles.length);
     console.log(index);
@@ -30,6 +29,9 @@ const Typewriter = () => {
 
   useEffect(() => {
     changeTitle();
+    return () => {
+      window.clearTimeout(picker.current);
+    };
   }, []);
 
   return (
