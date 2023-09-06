@@ -28,7 +28,6 @@ const Typewriter = () => {
     timer = titleLength * 400;
     setTitle(newTitle);
     lastTitle = newTitle;
-    console.log(newTitle);
     picker.current = window.setTimeout(changeTitle, timer);
   }
 
@@ -43,7 +42,7 @@ const Typewriter = () => {
     <>
       <span
         key={title}
-        className={`text-secondary inline-block min-[460px]:block w-0 overflow-clip font-mono whitespace-nowrap border-r-2
+        className={`text-secondary inline-block min-[460px]:block sm:inline-block min-[850px]:block w-0 overflow-clip font-mono whitespace-nowrap border-r-2
         ${titleLength == 5 ? "animate-type_5" : ""}
         ${titleLength == 6 ? "animate-type_6" : ""}
         ${titleLength == 7 ? "animate-type_7" : ""}
