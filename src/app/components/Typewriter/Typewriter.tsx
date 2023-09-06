@@ -1,7 +1,13 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  useMemo,
+  useLayoutEffect,
+} from "react";
 
-const titles = [
+const titles: string[] = [
   "web designer",
   "avid sailor",
   "road tripper",
@@ -10,33 +16,49 @@ const titles = [
   "photographer",
   "animal lover",
 ];
+let titleLength: number;
 
 const Typewriter = () => {
-  let index: number = -1;
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState(titles[0]);
   const picker = useRef(0);
+  let timer: number;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     picker.current = window.setInterval(
       (function changeTitle() {
-        index = (index + 1) % titles.length;
-        setTitle(titles[index]);
+        const index = Math.floor(Math.random() * titles.length);
+        console.log(index);
+        let newTitle = titles[index];
+        titleLength = newTitle.length;
+        timer = titleLength * 400;
+        setTitle(newTitle);
         return changeTitle;
       })(),
-      6000
+      timer
     );
     return () => clearInterval(picker.current);
   }, []);
+
   return (
     <>
-      <div className="text-secondary">
-        <span
-          key={title}
-          className="text-secondary block w-[191px] md:w-[239px] overflow-clip whitespace-nowrap animate-type border-r-2"
-        >
-          {title}
-        </span>
-      </div>
+      <span
+        key={title}
+        className={`text-secondary inline-block w-0 overflow-clip font-mono whitespace-nowrap border-r-2
+        ${titleLength == 5 ? "animate-type_5" : ""}
+        ${titleLength == 6 ? "animate-type_6" : ""}
+        ${titleLength == 7 ? "animate-type_7" : ""}
+        ${titleLength == 8 ? "animate-type_8" : ""}
+        ${titleLength == 9 ? "animate-type_9" : ""}
+        ${titleLength == 10 ? "animate-type_10" : ""}
+        ${titleLength == 11 ? "animate-type_11" : ""}
+        ${titleLength == 12 ? "animate-type_12" : ""}
+        ${titleLength == 13 ? "animate-type_13" : ""}
+        ${titleLength == 14 ? "animate-type_14" : ""}
+        ${titleLength == 15 ? "animate-type_15" : ""}
+        `}
+      >
+        {title}
+      </span>
     </>
   );
 };

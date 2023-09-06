@@ -20,6 +20,7 @@ const Hero = () => {
             <h1 className="font-semibold text-2xl md:text-3xl text-white mb-3">
               Asad is a{" "}
               <span className="text-secondary">software developer</span> and{" "}
+              <br />
               <Typewriter />
             </h1>
             <p className="text-primary my-6 text-base md:text-lg">
