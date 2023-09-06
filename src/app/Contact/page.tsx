@@ -18,9 +18,9 @@ const Contact = () => {
           <div className="pt-5">
             <ContactForm />
           </div>
-          <div className="text-white font-medium text-2xl md:text-3xl mt-10">
+          {/* <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>socials
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
