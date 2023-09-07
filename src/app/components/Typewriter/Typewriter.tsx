@@ -3,12 +3,24 @@ import React, { useState, useRef, useEffect } from "react";
 
 const titles: string[] = [
   "web designer",
-  "avid sailor",
-  "road tripper",
+  "captain of the Cs",
+  "adventurer",
+  "visionary",
   "problem solver",
-  "video gamer",
-  "photographer",
+  "game designer",
+  "snapshot artist",
   "animal lover",
+  "sci-fi writer",
+  "creative thinker",
+  "tech enthusiast",
+  "trouble shooter",
+  "page turner",
+  "cat whisperer",
+  "python charmer",
+  "java junkie",
+  "rickroller",
+  "code monkey",
+  "pun-isher of bugs",
 ];
 let titleLength: number;
 
@@ -23,7 +35,7 @@ const Typewriter = () => {
     do {
       const index = Math.floor(Math.random() * titles.length);
       newTitle = titles[index];
-    } while (newTitle === lastTitle);
+    } while (newTitle === lastTitle && newTitle.length >= 20);
     titleLength = newTitle.length;
     timer = titleLength * 400;
     setTitle(newTitle);
@@ -54,6 +66,11 @@ const Typewriter = () => {
         ${titleLength == 13 ? "animate-type_13" : ""}
         ${titleLength == 14 ? "animate-type_14" : ""}
         ${titleLength == 15 ? "animate-type_15" : ""}
+        ${titleLength == 16 ? "animate-type_16" : ""}
+        ${titleLength == 17 ? "animate-type_17" : ""}
+        ${titleLength == 18 ? "animate-type_18" : ""}
+        ${titleLength == 19 ? "animate-type_19" : ""}
+        ${titleLength == 20 ? "animate-type_20" : ""}
         `}
       >
         {title}

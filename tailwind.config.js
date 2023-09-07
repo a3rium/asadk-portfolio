@@ -80,6 +80,22 @@ module.exports = {
           "0%": { width: 0 },
           "100%": { width: "16ch" },
         },
+        type_16: {
+          "0%": { width: 0 },
+          "100%": { width: "17ch" },
+        },
+        type_18: {
+          "0%": { width: 0 },
+          "100%": { width: "19ch" },
+        },
+        type_19: {
+          "0%": { width: 0 },
+          "100%": { width: "20ch" },
+        },
+        type_20: {
+          "0%": { width: 0 },
+          "100%": { width: "21ch" },
+        },
         blink: {
           from: { "border-right-color": "transparent" },
           to: { "border-right-color": "secondary" },
@@ -99,6 +115,11 @@ module.exports = {
         type_13: "type_13 2.6s steps(26) 2 alternate, blink 0.7s infinite",
         type_14: "type_14 2.8s steps(28) 2 alternate, blink 0.7s infinite",
         type_15: "type_15 3s steps(30) 2 alternate, blink 0.7s infinite",
+        type_16: "type_16 3.2s steps(32) 2 alternate, blink 0.7s infinite",
+        type_17: "type_17 3.4s steps(34) 2 alternate, blink 0.7s infinite",
+        type_18: "type_18 3.6s steps(36) 2 alternate, blink 0.7s infinite",
+        type_19: "type_19 3.8s steps(38) 2 alternate, blink 0.7s infinite",
+        type_20: "type_20 4s steps(40) 2 alternate, blink 0.7s infinite",
       },
     },
   },
