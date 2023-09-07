@@ -100,6 +100,30 @@ module.exports = {
           "0%": { width: 0 },
           "100%": { width: "21ch" },
         },
+        type_21: {
+          "0%": { width: 0 },
+          "100%": { width: "22ch" },
+        },
+        type_22: {
+          "0%": { width: 0 },
+          "100%": { width: "23ch" },
+        },
+        type_23: {
+          "0%": { width: 0 },
+          "100%": { width: "24ch" },
+        },
+        type_24: {
+          "0%": { width: 0 },
+          "100%": { width: "25ch" },
+        },
+        type_25: {
+          "0%": { width: 0 },
+          "100%": { width: "26ch" },
+        },
+        type_26: {
+          "0%": { width: 0 },
+          "100%": { width: "27ch" },
+        },
         blink: {
           from: { "border-right-color": "transparent" },
           to: { "border-right-color": "secondary" },
@@ -124,6 +148,12 @@ module.exports = {
         type_18: "type_18 3.6s steps(36) 2 alternate, blink 0.7s infinite",
         type_19: "type_19 3.8s steps(38) 2 alternate, blink 0.7s infinite",
         type_20: "type_20 4s steps(40) 2 alternate, blink 0.7s infinite",
+        type_21: "type_21 4.2s steps(42) 2 alternate, blink 0.7s infinite",
+        type_22: "type_22 4.4s steps(44) 2 alternate, blink 0.7s infinite",
+        type_23: "type_23 4.6s steps(46) 2 alternate, blink 0.7s infinite",
+        type_24: "type_24 4.8s steps(48) 2 alternate, blink 0.7s infinite",
+        type_25: "type_25 5s steps(50) 2 alternate, blink 0.7s infinite",
+        type_26: "type_26 5.2s steps(52) 2 alternate, blink 0.7s infinite",
       },
     },
   },

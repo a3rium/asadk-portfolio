@@ -7,7 +7,7 @@ let titleLength: number;
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
   const picker = useRef(0);
-  const char_limit = 20;
+  const char_limit = 26;
   const time_per_char = 400;
 
   useEffect(() => {
@@ -61,6 +61,12 @@ const Typewriter = () => {
         ${titleLength === 18 ? "animate-type_18" : ""}
         ${titleLength === 19 ? "animate-type_19" : ""}
         ${titleLength === 20 ? "animate-type_20" : ""}
+        ${titleLength === 21 ? "animate-type_21" : ""}
+        ${titleLength === 22 ? "animate-type_22" : ""}
+        ${titleLength === 23 ? "animate-type_23" : ""}
+        ${titleLength === 24 ? "animate-type_24" : ""}
+        ${titleLength === 25 ? "animate-type_25" : ""}
+        ${titleLength === 26 ? "animate-type_26" : ""}
         `}
       >
         {title}

@@ -3,9 +3,9 @@ import { Hobby } from "../lib/types/Hobby";
 
 export const titles: string[] = [
   "web designer",
-  "captain of the Cs",
+  "captain of the C's",
   "adventurer",
-  "python charmer",
+  "python wrangler",
   "visionary",
   "problem solver",
   "code monkey",
@@ -20,7 +20,7 @@ export const titles: string[] = [
   "java junkie",
   "animal lover",
   "page turner",
-  "rickroller",
+  "is never gonna give you up",
 ];
 
 export const skills: Skill[] = [
