@@ -1,4 +1,4 @@
-import { Hobby } from "@/app/types/Hobby";
+import { Hobby } from "@/lib/types/Hobby";
 import React, { FC, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 

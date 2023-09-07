@@ -1,4 +1,4 @@
-import { Project } from "@/app/types/Project";
+import { Project } from "@/lib/types/Project";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, HTMLAttributes } from "react";
@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/app/components/ui/tooltip";
+} from "@/components/ui/tooltip";
 
 interface ProjectProps {
   projectProps: Project;

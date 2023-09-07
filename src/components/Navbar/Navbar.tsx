@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
-import { pages } from "@/app/data/navigation";
+import { pages } from "@/data/navigation";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { titles } from "@/app/data/about";
+import { titles } from "@/data/about";
 
 let titleLength: number;
 
@@ -38,7 +38,7 @@ const Typewriter = () => {
     return () => {
       window.clearTimeout(picker.current);
     };
-  }, []);
+  });
 
   return (
     <>

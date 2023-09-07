@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import ProjectCard from "../components/ProjectCard/ProjectCard";
-import { projects } from "@/app/data/projects";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
   return (

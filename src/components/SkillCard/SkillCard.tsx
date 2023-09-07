@@ -1,4 +1,4 @@
-import { Skill } from "@/app/types/Skill";
+import { Skill } from "@/lib/types/Skill";
 import React, { FC, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 

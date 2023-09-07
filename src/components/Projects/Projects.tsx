@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "@/app/data/projects";
+import { projects } from "@/data/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Link from "next/link";
 

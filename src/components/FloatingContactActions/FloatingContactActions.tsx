@@ -9,7 +9,7 @@ import {
   TooltipTrigger,
 } from "../ui/tooltip";
 import { copyToClipboard } from "@/lib/utils";
-import { useToast } from "@/app/components/ui/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 
 const FloatingContactActions = () => {
   const { toast } = useToast();

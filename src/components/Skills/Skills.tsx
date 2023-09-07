@@ -1,4 +1,4 @@
-import { skills } from "@/app/data/about";
+import { skills } from "@/data/about";
 import React, { FC } from "react";
 import SkillCard from "../SkillCard/SkillCard";
 import Image from "next/image";
