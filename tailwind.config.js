@@ -84,6 +84,10 @@ module.exports = {
           "0%": { width: 0 },
           "100%": { width: "17ch" },
         },
+        type_17: {
+          "0%": { width: 0 },
+          "100%": { width: "18ch" },
+        },
         type_18: {
           "0%": { width: 0 },
           "100%": { width: "19ch" },
