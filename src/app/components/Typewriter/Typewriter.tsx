@@ -1,32 +1,14 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import { titles } from "@/app/data/about";
 
-const titles: string[] = [
-  "web designer",
-  "captain of the Cs",
-  "adventurer",
-  "python charmer",
-  "visionary",
-  "problem solver",
-  "code monkey",
-  "game designer",
-  "pun-isher of bugs",
-  "snapshot artist",
-  "sci-fi writer",
-  "cat whisperer",
-  "creative thinker",
-  "trouble shooter",
-  "tech enthusiast",
-  "java junkie",
-  "animal lover",
-  "page turner",
-  "rickroller",
-];
 let titleLength: number;
 
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
   const picker = useRef(0);
+  const char_limit = 20;
+  const time_per_char = 400;
   let lastTitle: string;
 
   function changeTitle() {
@@ -41,10 +23,10 @@ const Typewriter = () => {
         const index = (titles.indexOf(lastTitle) + 1) % titles.length;
         newTitle = titles[index];
       }
-    } while (newTitle === lastTitle || newTitle.length > 20);
+    } while (newTitle === lastTitle || newTitle.length > char_limit);
     // console.log("Title: " + newTitle + " Length: " + newTitle.length);
     titleLength = newTitle.length;
-    timer = titleLength * 400;
+    timer = titleLength * time_per_char;
     setTitle(newTitle);
     // console.log("New: " + newTitle);
     lastTitle = newTitle;

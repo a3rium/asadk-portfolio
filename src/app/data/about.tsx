@@ -1,6 +1,28 @@
 import { Skill } from "../types/Skill";
 import { Hobby } from "../types/Hobby";
 
+export const titles: string[] = [
+  "web designer",
+  "captain of the Cs",
+  "adventurer",
+  "python charmer",
+  "visionary",
+  "problem solver",
+  "code monkey",
+  "game designer",
+  "pun-isher of bugs",
+  "snapshot artist",
+  "sci-fi writer",
+  "cat whisperer",
+  "creative thinker",
+  "trouble shooter",
+  "tech enthusiast",
+  "java junkie",
+  "animal lover",
+  "page turner",
+  "rickroller",
+];
+
 export const skills: Skill[] = [
   {
     id: 1,
