@@ -7,13 +7,13 @@ const ContactForm = () => {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    const formData = new FormData(event.target as HTMLFormElement);
+    const form_data = new FormData(event.target as HTMLFormElement);
 
     const apiKey = process.env.NEXT_PUBLIC_WEB3FORM_KEY;
 
-    formData.append("access_key", apiKey as string);
+    form_data.append("access_key", apiKey as string);
 
-    const object = Object.fromEntries(formData);
+    const object = Object.fromEntries(form_data);
     const json = JSON.stringify(object);
 
     const response = await fetch("https://api.web3forms.com/submit", {
