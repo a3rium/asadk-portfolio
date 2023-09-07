@@ -9,36 +9,36 @@ const Typewriter = () => {
   const picker = useRef(0);
   const char_limit = 20;
   const time_per_char = 400;
-  let lastTitle: string;
-
-  function changeTitle() {
-    let timer: number;
-    let newTitle: string;
-    // console.log("Last: " + lastTitle);
-    do {
-      if (!lastTitle) {
-        const index = Math.floor(Math.random() * titles.length);
-        newTitle = titles[index];
-      } else {
-        const index = (titles.indexOf(lastTitle) + 1) % titles.length;
-        newTitle = titles[index];
-      }
-    } while (newTitle === lastTitle || newTitle.length > char_limit);
-    // console.log("Title: " + newTitle + " Length: " + newTitle.length);
-    titleLength = newTitle.length;
-    timer = titleLength * time_per_char;
-    setTitle(newTitle);
-    // console.log("New: " + newTitle);
-    lastTitle = newTitle;
-    picker.current = window.setTimeout(changeTitle, timer);
-  }
 
   useEffect(() => {
+    let lastTitle: string;
+    const changeTitle = () => {
+      let timer: number;
+      let newTitle: string;
+      // console.log("Last: " + lastTitle);
+      do {
+        if (!lastTitle) {
+          const index = Math.floor(Math.random() * titles.length);
+          newTitle = titles[index];
+        } else {
+          const index = (titles.indexOf(lastTitle) + 1) % titles.length;
+          newTitle = titles[index];
+        }
+      } while (newTitle === lastTitle || newTitle.length > char_limit);
+      // console.log("Title: " + newTitle + " Length: " + newTitle.length);
+      titleLength = newTitle.length;
+      timer = titleLength * time_per_char;
+      setTitle(newTitle);
+      // console.log("New: " + newTitle);
+      lastTitle = newTitle;
+      picker.current = window.setTimeout(changeTitle, timer);
+    };
+
     changeTitle();
     return () => {
       window.clearTimeout(picker.current);
     };
-  });
+  }, []);
 
   return (
     <>
