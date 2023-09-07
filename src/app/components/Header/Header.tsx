@@ -12,7 +12,7 @@ const Header = () => {
             <div className="left flex items-center font-bold text-white text-3xl md:text-4xl lg:text-5xl">
               <span className="text-secondary font-medium px-1">{"{"}</span>Asad
               <span className="text-secondary font-medium px-1">{"}"}</span>K
-              <span className="hidden md:block">othawala</span>
+              <span className="hidden md:block">oths</span>
               <span className="text-secondary font-bold">.</span>
             </div>
             <div className="right flex items-center">
