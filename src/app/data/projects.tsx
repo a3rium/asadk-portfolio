@@ -7,14 +7,14 @@ export const showcase: Project[] = [
     languages: ["Python", "cv2"],
     title: "Indian Sign Language Recognizer",
     description:
-      "A Computer Vision project created as part of University final.",
+      "A Computer Vision project created as part of a University final.",
     repo: "https://github.com/a3rium/ISL_recognizer",
     link: "",
   },
   {
     id: 2,
     img_path: "https://via.placeholder.com/300x150",
-    languages: ["React", "TypeScript"],
+    languages: ["Python", "Word2Vec", "TF-IDF", "GloVe"],
     title: "Genre Classification and Sentiment Analysis of Steam Game Reviews",
     description:
       "An NLP project made as part of a University final to analyse and compare methods for Genre Classification and Sentiment Analysis of Steam game reviews.",
@@ -24,10 +24,10 @@ export const showcase: Project[] = [
   {
     id: 3,
     img_path: "https://via.placeholder.com/300x150",
-    languages: ["React", "TypeScript"],
+    languages: ["Java", "Android Studio"],
     title: "Medical Adherence Android Application",
     description:
-      "An android application to help the vision impaired adhere to medical prescriptions build as part of a University project.",
+      "An android application to help the vision impaired adhere to medical prescriptions built as part of a University project.",
     repo: "https://github.com/a3rium/medical_adherence_app",
     link: "",
   },
@@ -40,14 +40,14 @@ export const completed: Project[] = [
     languages: ["Python", "cv2"],
     title: "Indian Sign Language Recognizer",
     description:
-      "A Computer Vision project created as part of University final.",
+      "A Computer Vision project created as part of a University final.",
     repo: "https://github.com/a3rium/ISL_recognizer",
     link: "",
   },
   {
     id: 2,
     img_path: "https://via.placeholder.com/300x150",
-    languages: ["React", "TypeScript"],
+    languages: ["Python", "Word2Vec", "TF-IDF", "GloVe"],
     title: "Genre Classification and Sentiment Analysis of Steam Game Reviews",
     description:
       "An NLP project made as part of a University final to analyse and compare methods for Genre Classification and Sentiment Analysis of Steam game reviews.",
@@ -57,10 +57,10 @@ export const completed: Project[] = [
   {
     id: 3,
     img_path: "https://via.placeholder.com/300x150",
-    languages: ["React", "TypeScript"],
+    languages: ["Java", "Android Studio"],
     title: "Medical Adherence Android Application",
     description:
-      "An android application to help the vision impaired adhere to medical prescriptions build as part of a University project.",
+      "An android application to help the vision impaired adhere to medical prescriptions built as part of a University project.",
     repo: "https://github.com/a3rium/medical_adherence_app",
     link: "",
   },
@@ -80,7 +80,7 @@ export const play_pen: Project[] = [
   {
     id: 1,
     img_path: "https://via.placeholder.com/300x150",
-    languages: ["C#"],
+    languages: ["C#", "Unity"],
     title: "Infinite Borders",
     description:
       "Simple 2.5D inifinite Runner game built with Unity Game Engine.",
