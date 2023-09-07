@@ -5,7 +5,7 @@ export const skills: Skill[] = [
   {
     id: 1,
     title: "Languages",
-    technologies: ["TypeScript", "Java", "Python", "C++"],
+    technologies: ["TypeScript", "Java", "Python", "C++", "C", "C#"],
   },
   {
     id: 2,
