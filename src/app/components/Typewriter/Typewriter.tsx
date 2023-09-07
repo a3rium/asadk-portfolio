@@ -5,22 +5,22 @@ const titles: string[] = [
   "web designer",
   "captain of the Cs",
   "adventurer",
+  "python charmer",
   "visionary",
   "problem solver",
-  "game designer",
-  "snapshot artist",
-  "animal lover",
-  "sci-fi writer",
-  "creative thinker",
-  "tech enthusiast",
-  "trouble shooter",
-  "page turner",
-  "cat whisperer",
-  "python charmer",
-  "java junkie",
-  "rickroller",
   "code monkey",
+  "game designer",
   "pun-isher of bugs",
+  "snapshot artist",
+  "sci-fi writer",
+  "cat whisperer",
+  "creative thinker",
+  "trouble shooter",
+  "tech enthusiast",
+  "java junkie",
+  "animal lover",
+  "page turner",
+  "rickroller",
 ];
 let titleLength: number;
 
@@ -34,7 +34,8 @@ const Typewriter = () => {
     let newTitle: string;
     // console.log("Last: " + lastTitle);
     do {
-      const index = Math.floor(Math.random() * titles.length);
+      // const index = Math.floor(Math.random() * titles.length);
+      const index = (titles.indexOf(lastTitle) + 1) % titles.length;
       newTitle = titles[index];
       // console.log("Title: " + newTitle + " Length: " + newTitle.length);
     } while (newTitle === lastTitle || newTitle.length > 20);
