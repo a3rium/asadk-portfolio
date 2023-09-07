@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
             </div>
             <div className="text-white text-sm md:text-base">
-              <p>Software developer and web-designer based in Canada.</p>
+              <p>Software developer and web designer based in Canada.</p>
             </div>
           </div>
           <ContactPanel />
