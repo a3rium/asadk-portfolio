@@ -1,5 +1,5 @@
 import React from "react";
-import { showcase } from "@/app/data/projects";
+import { projects } from "@/app/data/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Link from "next/link";
 
@@ -22,14 +22,15 @@ const Projects = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-8">
-            {showcase.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.id}
-                  className=""
-                  projectProps={project}
-                />
-              );
+            {projects.map((project) => {
+              if (project.type === "showcase")
+                return (
+                  <ProjectCard
+                    key={project.id}
+                    className=""
+                    projectProps={project}
+                  />
+                );
             })}
           </div>
         </div>

@@ -6,4 +6,5 @@ export type Project = {
   description: string;
   repo: string;
   link: string;
+  type: string;
 };

@@ -2,8 +2,7 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
-import { completed } from "@/app/data/projects";
-import { play_pen } from "@/app/data/projects";
+import { projects } from "@/app/data/projects";
 
 const Projects = () => {
   return (
@@ -24,28 +23,30 @@ const Projects = () => {
             <span className="text-secondary">#</span>completed-projects
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {completed.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.id}
-                  className=""
-                  projectProps={project}
-                />
-              );
+            {projects.map((project) => {
+              if (project.type === "showcase" || project.type === "complete")
+                return (
+                  <ProjectCard
+                    key={project.id}
+                    className=""
+                    projectProps={project}
+                  />
+                );
             })}
           </div>
           <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>play-pen
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {play_pen.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.id}
-                  className=""
-                  projectProps={project}
-                />
-              );
+            {projects.map((project) => {
+              if (project.type === "incomplete")
+                return (
+                  <ProjectCard
+                    key={project.id}
+                    className=""
+                    projectProps={project}
+                  />
+                );
             })}
           </div>
         </div>
