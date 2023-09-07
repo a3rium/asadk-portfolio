@@ -21,6 +21,7 @@ export const titles: string[] = [
   "animal lover",
   "page turner",
   "is never gonna give you up",
+  "rickroller",
 ];
 
 export const skills: Skill[] = [
