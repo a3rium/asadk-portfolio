@@ -24,7 +24,7 @@ const Footer = () => {
           <ContactPanel />
         </div>
         <div className="text-right text-primary text-xs md:text-sm pb-4 mt-8">
-          Made by Asad Kothawala.
+          Made by Asad Koths.
         </div>
       </div>
     </>
