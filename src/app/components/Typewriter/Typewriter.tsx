@@ -27,18 +27,22 @@ let titleLength: number;
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
   const picker = useRef(0);
-  let lastTitle: string = "";
+  let lastTitle: string;
 
   function changeTitle() {
     let timer: number;
     let newTitle: string;
     // console.log("Last: " + lastTitle);
     do {
-      // const index = Math.floor(Math.random() * titles.length);
-      const index = (titles.indexOf(lastTitle) + 1) % titles.length;
-      newTitle = titles[index];
-      // console.log("Title: " + newTitle + " Length: " + newTitle.length);
+      if (!lastTitle) {
+        const index = Math.floor(Math.random() * titles.length);
+        newTitle = titles[index];
+      } else {
+        const index = (titles.indexOf(lastTitle) + 1) % titles.length;
+        newTitle = titles[index];
+      }
     } while (newTitle === lastTitle || newTitle.length > 20);
+    // console.log("Title: " + newTitle + " Length: " + newTitle.length);
     titleLength = newTitle.length;
     timer = titleLength * 400;
     setTitle(newTitle);
