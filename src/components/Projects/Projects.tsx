@@ -1,6 +1,5 @@
 import React from "react";
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import Link from "next/link";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
