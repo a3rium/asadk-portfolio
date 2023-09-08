@@ -4,24 +4,18 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import Link from "next/link";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import ProjectGrid from "../ProjectGrid/ProjectGrid";
 
 const Projects = () => {
   return (
     <>
       <ContentContainer>
         <SectionHeading title="projects" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => {
-            if (project.type === "showcase")
-              return (
-                <ProjectCard
-                  key={project.id}
-                  className=""
-                  projectProps={project}
-                />
-              );
-          })}
-        </div>
+        <ProjectGrid
+          projects={projects}
+          type="showcase"
+          className="sm:grid-cols-2 lg:grid-cols-3"
+        />
         <div className="text-white float-right my-1">
           <Link href="/Projects">
             <span>View all --&gt;</span>
