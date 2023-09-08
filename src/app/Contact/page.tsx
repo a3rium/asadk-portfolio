@@ -4,15 +4,14 @@ import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import PageHeading from "@/components/PageHeading/PageHeading";
 
 const Contact = () => {
   return (
     <>
       <Header />
       <ContentContainer>
-        <div className="text-white font-medium text-3xl md:text-4xl">
-          <span className="text-secondary">/</span>contact-me
-        </div>
+        <PageHeading title="contact-me" />
         <SectionHeading title="say-hi!" />
         <div className="pt-5">
           <ContactForm />

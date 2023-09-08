@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { projects } from "@/data/projects";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import PageHeading from "@/components/PageHeading/PageHeading";
 
 const Projects = () => {
   return (
@@ -15,9 +16,7 @@ const Projects = () => {
         HERO - Project Carousel
       </div> */}
       <ContentContainer>
-        <div className="text-white font-medium text-3xl md:text-4xl">
-          <span className="text-secondary">/</span>projects
-        </div>
+        <PageHeading title="projects" />
 
         <SectionHeading title="completed-projects" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

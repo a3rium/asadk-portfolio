@@ -7,21 +7,16 @@ import { hobbies, skills } from "../../data/about";
 import HobbyCard from "@/components/HobbyCard/HobbyCard";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
+import PageHeading from "@/components/PageHeading/PageHeading";
 
 const About = () => {
   return (
     <>
       <Header />
       <ContentContainer>
+        <PageHeading title="about" />
         <div className="flex-wrap flex items-center justify-between">
           <div className="md:w-5/12 w-full">
-            <div className="mb-12">
-              <div className="text-white font-medium text-3xl md:text-4xl">
-                <div className="">
-                  <span className="text-secondary">/</span>about
-                </div>
-              </div>
-            </div>
             <p className="text-primary text-base md:text-lg">
               Hello, I’m Asad!
               <br />
@@ -57,20 +52,18 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full mt-20">
-          <SectionHeading title="hobbies" />
-          <div className="text-white">
-            <div className="mx-auto flex justify-around flex-wrap gap-4">
-              {hobbies.map((hobby) => {
-                return (
-                  <HobbyCard
-                    className="basis-[45%] sm:basis-[30%] lg:basis-[21%]"
-                    key={hobby.id}
-                    hobbyProps={hobby}
-                  />
-                );
-              })}
-            </div>
+        <SectionHeading title="hobbies" />
+        <div className="text-white">
+          <div className="mx-auto flex justify-around flex-wrap gap-4">
+            {hobbies.map((hobby) => {
+              return (
+                <HobbyCard
+                  className="basis-[45%] sm:basis-[30%] lg:basis-[21%]"
+                  key={hobby.id}
+                  hobbyProps={hobby}
+                />
+              );
+            })}
           </div>
         </div>
       </ContentContainer>
