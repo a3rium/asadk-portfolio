@@ -10,10 +10,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-interface ProjectProps {
+type ProjectProps = {
   projectProps: Project;
   className?: HTMLAttributes<HTMLDivElement>["className"];
-}
+};
 
 const ProjectCard: FC<ProjectProps> = ({ className, projectProps }) => {
   const classes = twMerge(

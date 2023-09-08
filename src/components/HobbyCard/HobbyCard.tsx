@@ -2,10 +2,10 @@ import { Hobby } from "@/lib/types/Hobby";
 import React, { FC, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface HobbyProps {
+type HobbyProps = {
   hobbyProps: Hobby;
   className?: HTMLAttributes<HTMLDivElement>["className"];
-}
+};
 
 const HobbyCard: FC<HobbyProps> = ({ className, hobbyProps }) => {
   const classes = twMerge(

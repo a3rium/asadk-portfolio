@@ -2,10 +2,10 @@ import { Skill } from "@/lib/types/Skill";
 import React, { FC, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface SkillProps {
+type SkillProps = {
   skillProps: Skill;
   className?: HTMLAttributes<HTMLDivElement>["className"];
-}
+};
 
 const SkillCard: FC<SkillProps> = ({ className, skillProps }) => {
   const classes = twMerge(
