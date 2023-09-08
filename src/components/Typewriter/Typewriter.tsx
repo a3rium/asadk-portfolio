@@ -6,9 +6,10 @@ let titleLength: number;
 
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
-  const picker = useRef(0);
-  const char_limit = 26;
-  const time_per_char = 400;
+  const [typedText, setTypedText] = useState<string>();
+  const title_picker = useRef(0);
+  const char_counter = useRef(0);
+  const time_per_char = 300;
 
   useEffect(() => {
     let lastTitle: string;
@@ -24,52 +25,57 @@ const Typewriter = () => {
           const index = (titles.indexOf(lastTitle) + 1) % titles.length;
           newTitle = titles[index];
         }
-      } while (newTitle === lastTitle || newTitle.length > char_limit);
+      } while (newTitle === lastTitle);
       // console.log("Title: " + newTitle + " Length: " + newTitle.length);
       titleLength = newTitle.length;
-      timer = titleLength * time_per_char;
+      timer = titleLength * time_per_char + 250;
       setTitle(newTitle);
       // console.log("New: " + newTitle);
       lastTitle = newTitle;
-      picker.current = window.setTimeout(changeTitle, timer);
+      title_picker.current = window.setTimeout(changeTitle, timer);
     };
-
     changeTitle();
     return () => {
-      window.clearTimeout(picker.current);
+      window.clearTimeout(title_picker.current);
     };
   }, []);
 
+  useEffect(() => {
+    // console.log(title);
+    let charsTyped: number = 0;
+    let typingForward: boolean = true;
+    setTypedText("");
+    const typeText = () => {
+      if (title) {
+        // console.log("Title Length:" + title.length);
+        if (typingForward && title.length === charsTyped) {
+          typingForward = false;
+        }
+        // console.log(typingForward);
+        if (typingForward && charsTyped < title.length) {
+          // console.log("Increasing chars");
+          charsTyped = charsTyped + 1;
+          setTypedText(title.slice(0, charsTyped));
+          char_counter.current = window.setTimeout(typeText, 200);
+        } else if (!typingForward && charsTyped != 0) {
+          // console.log("Decreasing chars");
+          charsTyped = charsTyped - 1;
+          setTypedText(title.slice(0, charsTyped));
+          char_counter.current = window.setTimeout(typeText, 100);
+        }
+        // console.log(charsTyped);
+      }
+    };
+    typeText();
+    return () => {
+      window.clearTimeout(char_counter.current);
+    };
+  }, [title]);
+
   return (
     <>
-      <span
-        key={title}
-        className={`text-secondary inline-block min-[460px]:block sm:inline-block min-[850px]:block w-0 overflow-clip font-mono whitespace-nowrap border-r-2
-        ${titleLength === 5 ? "animate-type_5" : ""}
-        ${titleLength === 6 ? "animate-type_6" : ""}
-        ${titleLength === 7 ? "animate-type_7" : ""}
-        ${titleLength === 8 ? "animate-type_8" : ""}
-        ${titleLength === 9 ? "animate-type_9" : ""}
-        ${titleLength === 10 ? "animate-type_10" : ""}
-        ${titleLength === 11 ? "animate-type_11" : ""}
-        ${titleLength === 12 ? "animate-type_12" : ""}
-        ${titleLength === 13 ? "animate-type_13" : ""}
-        ${titleLength === 14 ? "animate-type_14" : ""}
-        ${titleLength === 15 ? "animate-type_15" : ""}
-        ${titleLength === 16 ? "animate-type_16" : ""}
-        ${titleLength === 17 ? "animate-type_17" : ""}
-        ${titleLength === 18 ? "animate-type_18" : ""}
-        ${titleLength === 19 ? "animate-type_19" : ""}
-        ${titleLength === 20 ? "animate-type_20" : ""}
-        ${titleLength === 21 ? "animate-type_21" : ""}
-        ${titleLength === 22 ? "animate-type_22" : ""}
-        ${titleLength === 23 ? "animate-type_23" : ""}
-        ${titleLength === 24 ? "animate-type_24" : ""}
-        ${titleLength === 25 ? "animate-type_25" : ""}
-        ${titleLength === 26 ? "animate-type_26" : ""}
-        `}
-      >
-        {title}
+      <span className="text-secondary font-semibold font-mono overflow-clip whitespace-nowrap border-r-2 animate-blink">
+        {typedText}
       </span>
     </>
   );
