@@ -26,16 +26,15 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <label
+            onClick={() => {
+              setToggle(false);
+            }}
+            className="absolute block md:hidden right-3 top-3 text-3xl text-white"
+          >
+            ✕
+          </label>
         </ul>
-
-        <label
-          onClick={() => {
-            setToggle(false);
-          }}
-          className="absolute block md:hidden right-3 top-3 text-3xl text-white"
-        >
-          ✕
-        </label>
       </nav>
 
       <div
