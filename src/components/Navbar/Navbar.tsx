@@ -16,8 +16,11 @@ const Navbar = () => {
           } bg-tertiary md:static`}
         >
           {pages.map((page) => (
-            <li className="text-primary active:text-white text-4xl md:text-lg my-4 list-none mx-2 lg:mx-4 md:my-auto ">
-              <Link key={page.id} href={page.path}>
+            <li
+              key={page.id}
+              className="text-primary active:text-white text-4xl md:text-lg my-4 list-none mx-2 lg:mx-4 md:my-auto "
+            >
+              <Link href={page.path}>
                 <span className="text-secondary font-medium">#</span>
                 {page.name}
               </Link>
