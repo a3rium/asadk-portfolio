@@ -5,12 +5,13 @@ import Image from "next/image";
 import SkillCard from "@/components/SkillCard/SkillCard";
 import { hobbies, skills } from "../../data/about";
 import HobbyCard from "@/components/HobbyCard/HobbyCard";
+import ContentContainer from "@/components/ContentContainer/ContentContainer";
 
 const About = () => {
   return (
     <>
       <Header />
-      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+      <ContentContainer>
         <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
           <div className="md:w-5/12 w-full">
             <div className="mb-12">
@@ -82,7 +83,8 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ContentContainer>
+
       <Footer />
     </>
   );

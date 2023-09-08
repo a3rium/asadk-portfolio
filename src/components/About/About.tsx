@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
 const About = () => {
   return (
     <>
       <div className="relative w-full">
-        <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+        <ContentContainer>
           <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">
               <div className="mb-12">
@@ -49,7 +50,8 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
+        </ContentContainer>
+
         <div className="absolute right-0 bottom-[10%] hidden md:block -z-20">
           <Image
             src="/motifs/circuit-3.png"

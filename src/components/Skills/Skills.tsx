@@ -2,11 +2,12 @@ import { skills } from "@/data/about";
 import React, { FC } from "react";
 import SkillCard from "../SkillCard/SkillCard";
 import Image from "next/image";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
 const Skills = () => {
   return (
     <>
-      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+      <ContentContainer>
         <div className="md:px-14 mx-8">
           <div className="mb-10">
             <div className=" text-white w-2/3 font-medium text-2xl md:text-3xl flex items-center gap-2">
@@ -33,7 +34,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ContentContainer>
     </>
   );
 };

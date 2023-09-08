@@ -2,12 +2,13 @@ import React from "react";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import ContentContainer from "@/components/ContentContainer/ContentContainer";
 
 const Contact = () => {
   return (
     <>
       <Header />
-      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+      <ContentContainer>
         <div className="md:px-14 mx-8 flex flex-col">
           <div className="text-white font-medium text-3xl md:text-4xl">
             <span className="text-secondary">/</span>contact-me
@@ -22,7 +23,7 @@ const Contact = () => {
             <span className="text-secondary">#</span>socials
           </div> */}
         </div>
-      </div>
+      </ContentContainer>
       <Footer />
     </>
   );

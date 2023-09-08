@@ -3,6 +3,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { projects } from "@/data/projects";
+import ContentContainer from "@/components/ContentContainer/ContentContainer";
 
 const Projects = () => {
   return (
@@ -12,8 +13,7 @@ const Projects = () => {
         TODO: Hero section with carousel of projects
         HERO - Project Carousel
       </div> */}
-
-      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+      <ContentContainer>
         <div className="md:px-14 mx-8 flex flex-col">
           <div className="text-white font-medium text-3xl md:text-4xl">
             <span className="text-secondary">/</span>projects
@@ -50,7 +50,7 @@ const Projects = () => {
             })}
           </div>
         </div>
-      </div>
+      </ContentContainer>
       <Footer />
     </>
   );

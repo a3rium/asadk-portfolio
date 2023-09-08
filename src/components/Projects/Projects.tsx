@@ -2,11 +2,12 @@ import React from "react";
 import { projects } from "@/data/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Link from "next/link";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
 const Projects = () => {
   return (
     <>
-      <div className="max-w-screen-2xl mx-auto mt-20 py-10">
+      <ContentContainer>
         <div className="md:px-14 mx-8">
           <div className="flex justify-between items-center gap-5">
             <div className="text-white w-2/3 font-medium text-2xl md:text-3xl flex items-center gap-2">
@@ -34,7 +35,7 @@ const Projects = () => {
             })}
           </div>
         </div>
-      </div>
+      </ContentContainer>
     </>
   );
 };
