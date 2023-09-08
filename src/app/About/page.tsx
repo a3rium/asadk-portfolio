@@ -6,6 +6,7 @@ import SkillCard from "@/components/SkillCard/SkillCard";
 import { hobbies, skills } from "../../data/about";
 import HobbyCard from "@/components/HobbyCard/HobbyCard";
 import ContentContainer from "@/components/ContentContainer/ContentContainer";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const About = () => {
   return (
@@ -45,13 +46,7 @@ const About = () => {
             />
           </div>
           <div className="mx-auto mt-20">
-            <div className="mb-10">
-              <div className=" text-white font-medium text-2xl md:text-3xl">
-                <div className="">
-                  <span className="text-secondary">#</span>skills
-                </div>
-              </div>
-            </div>
+            <SectionHeading title="skills" />
             <div className="text-white">
               <div className="mx-auto flex justify-between flex-wrap gap-4">
                 {skills.map((skill) => {
@@ -61,13 +56,7 @@ const About = () => {
             </div>
           </div>
           <div className="w-full mt-20">
-            <div className="mb-10">
-              <div className=" text-white font-medium text-2xl md:text-3xl">
-                <div className="">
-                  <span className="text-secondary">#</span>hobbies
-                </div>
-              </div>
-            </div>
+            <SectionHeading title="hobbies" />
             <div className="text-white">
               <div className="mx-auto flex justify-around flex-wrap gap-4">
                 {hobbies.map((hobby) => {

@@ -3,19 +3,13 @@ import React, { FC } from "react";
 import SkillCard from "../SkillCard/SkillCard";
 import Image from "next/image";
 import ContentContainer from "../ContentContainer/ContentContainer";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Skills = () => {
   return (
     <>
       <ContentContainer>
-        <div className="mb-10">
-          <div className=" text-white w-2/3 font-medium text-2xl md:text-3xl flex items-center gap-2">
-            <div className="">
-              <span className="text-secondary">#</span>skills
-            </div>
-            <div className="line flex-grow h-px bg-secondary"></div>
-          </div>
-        </div>
+        <SectionHeading title="skills" />
         <div className="flex flex-wrap gap-10 justify-between items-center">
           <div className="mx-auto">
             <Image

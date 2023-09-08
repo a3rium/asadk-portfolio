@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ContentContainer from "../ContentContainer/ContentContainer";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const About = () => {
   return (
@@ -10,14 +11,7 @@ const About = () => {
         <ContentContainer>
           <div className="flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">
-              <div className="mb-12">
-                <div className="text-white font-medium text-2xl md:text-3xl flex items-center gap-2">
-                  <div className="">
-                    <span className="text-secondary">#</span>about-me
-                  </div>
-                  <div className="line flex-grow h-px bg-secondary"></div>
-                </div>
-              </div>
+              <SectionHeading title="about-me" />
               <p className="text-primary text-base md:text-lg">
                 Hello, I’m Asad!
                 <br />
