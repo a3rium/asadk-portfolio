@@ -10,18 +10,16 @@ const Contact = () => {
     <>
       <Header />
       <ContentContainer>
-        <div className="flex flex-col">
-          <div className="text-white font-medium text-3xl md:text-4xl">
-            <span className="text-secondary">/</span>contact-me
-          </div>
-          <SectionHeading title="say-hi!" />
-          <div className="pt-5">
-            <ContactForm />
-          </div>
-          {/* <div className="text-white font-medium text-2xl md:text-3xl mt-10">
+        <div className="text-white font-medium text-3xl md:text-4xl">
+          <span className="text-secondary">/</span>contact-me
+        </div>
+        <SectionHeading title="say-hi!" />
+        <div className="pt-5">
+          <ContactForm />
+        </div>
+        {/* <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>socials
           </div> */}
-        </div>
       </ContentContainer>
       <Footer />
     </>

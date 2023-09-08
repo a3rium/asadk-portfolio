@@ -15,37 +15,35 @@ const Projects = () => {
         HERO - Project Carousel
       </div> */}
       <ContentContainer>
-        <div className="flex flex-col">
-          <div className="text-white font-medium text-3xl md:text-4xl">
-            <span className="text-secondary">/</span>projects
-          </div>
+        <div className="text-white font-medium text-3xl md:text-4xl">
+          <span className="text-secondary">/</span>projects
+        </div>
 
-          <SectionHeading title="completed-projects" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {projects.map((project) => {
-              if (project.type === "showcase" || project.type === "complete")
-                return (
-                  <ProjectCard
-                    key={project.id}
-                    className=""
-                    projectProps={project}
-                  />
-                );
-            })}
-          </div>
-          <SectionHeading title="play-pen" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {projects.map((project) => {
-              if (project.type === "incomplete")
-                return (
-                  <ProjectCard
-                    key={project.id}
-                    className=""
-                    projectProps={project}
-                  />
-                );
-            })}
-          </div>
+        <SectionHeading title="completed-projects" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {projects.map((project) => {
+            if (project.type === "showcase" || project.type === "complete")
+              return (
+                <ProjectCard
+                  key={project.id}
+                  className=""
+                  projectProps={project}
+                />
+              );
+          })}
+        </div>
+        <SectionHeading title="play-pen" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {projects.map((project) => {
+            if (project.type === "incomplete")
+              return (
+                <ProjectCard
+                  key={project.id}
+                  className=""
+                  projectProps={project}
+                />
+              );
+          })}
         </div>
       </ContentContainer>
       <Footer />
