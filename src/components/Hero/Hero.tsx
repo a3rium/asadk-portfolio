@@ -16,11 +16,15 @@ const Hero = () => {
           />
         </div>
         <div className="sm:px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
-          <div className="w-10/12 sm:w-8/12 mx-auto">
+          <div className="w-10/12 md:w-8/12 mx-auto">
             <h1 className="font-semibold text-2xl md:text-3xl text-white mb-3">
               Asad is a{" "}
               <span className="text-secondary">software developer</span> and{" "}
-              <Typewriter />
+              <span className="font-normal inline-block min-[460px]:block sm:inline-block min-[850px]:block">
+                {"{ "}
+                <Typewriter />
+                {" }"}
+              </span>
             </h1>
             <p className="text-primary my-6 text-base md:text-lg">
               He builds impactful solutions where technologies meet creativity.
