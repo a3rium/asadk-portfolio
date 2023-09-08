@@ -1,9 +1,9 @@
 import { skills } from "@/data/about";
 import React, { FC } from "react";
-import SkillCard from "../SkillCard/SkillCard";
+import SkillCard from "@/components/SkillCard/SkillCard";
 import Image from "next/image";
-import ContentContainer from "../ContentContainer/ContentContainer";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import ContentContainer from "@/components/ContentContainer/ContentContainer";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const Skills = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
 import React, { FormEvent } from "react";
-import { useToast } from "../ui/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactForm = () => {
   const { toast } = useToast();

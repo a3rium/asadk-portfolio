@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ContactPanel from "../ContactPanel/ContactPanel";
+import ContactPanel from "@/components/ContactPanel/ContactPanel";
 
 const Footer = () => {
   return (

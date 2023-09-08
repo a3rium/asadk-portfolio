@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import FloatingContactActions from "../FloatingContactActions/FloatingContactActions";
+import Navbar from "@/components/Navbar/Navbar";
+import FloatingContactActions from "@/components/FloatingContactActions/FloatingContactActions";
 
 const Header = () => {
   return (

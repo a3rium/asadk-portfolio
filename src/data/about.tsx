@@ -1,5 +1,5 @@
-import { Skill } from "../lib/types/Skill";
-import { Hobby } from "../lib/types/Hobby";
+import { Skill } from "@/lib/types/Skill";
+import { Hobby } from "@/lib/types/Hobby";
 
 export const titles: string[] = [
   "web designer...",

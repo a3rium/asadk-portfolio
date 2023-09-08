@@ -7,7 +7,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../ui/tooltip";
+} from "@/components/ui/tooltip";
 import { copyToClipboard } from "@/lib/utils";
 import { useToast } from "@/components/ui/use-toast";
 

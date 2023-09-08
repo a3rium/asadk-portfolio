@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ContentContainer from "../ContentContainer/ContentContainer";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import ContentContainer from "@/components/ContentContainer/ContentContainer";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const About = () => {
   return (
