@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <Header />
       <ContentContainer>
-        <div className="md:px-14 mx-8 flex flex-col">
+        <div className="flex flex-col">
           <div className="text-white font-medium text-3xl md:text-4xl">
             <span className="text-secondary">/</span>contact-me
           </div>

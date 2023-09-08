@@ -12,7 +12,7 @@ const About = () => {
     <>
       <Header />
       <ContentContainer>
-        <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
+        <div className="flex-wrap flex items-center justify-between">
           <div className="md:w-5/12 w-full">
             <div className="mb-12">
               <div className="text-white font-medium text-3xl md:text-4xl">

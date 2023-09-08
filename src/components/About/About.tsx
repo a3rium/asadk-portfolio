@@ -8,7 +8,7 @@ const About = () => {
     <>
       <div className="relative w-full">
         <ContentContainer>
-          <div className="md:px-14 mx-8 flex-wrap flex items-center justify-between">
+          <div className="flex-wrap flex items-center justify-between">
             <div className="md:w-5/12 w-full">
               <div className="mb-12">
                 <div className="text-white font-medium text-2xl md:text-3xl flex items-center gap-2">
