@@ -6,7 +6,7 @@ type PageHeadingProps = {
 
 const PageHeading: FC<PageHeadingProps> = ({ title }: PageHeadingProps) => {
   return (
-    <div className="text-white font-medium text-3xl md:text-4xl">
+    <div className="text-white font-medium text-3xl md:text-4xl mb-8">
       <span className="text-secondary">/</span>
       {title}
     </div>
