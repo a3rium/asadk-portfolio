@@ -7,7 +7,7 @@ type SkillProps = {
   className?: HTMLAttributes<HTMLDivElement>["className"];
 };
 
-const SkillCard: FC<SkillProps> = ({ className, skillProps }) => {
+const SkillCard: FC<SkillProps> = ({ className, skillProps }: SkillProps) => {
   const classes = twMerge(
     `basis-[90%] sm:basis-[45%] lg:basis-[30%] border border-primary`,
     className

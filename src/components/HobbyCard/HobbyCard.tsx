@@ -7,7 +7,7 @@ type HobbyProps = {
   className?: HTMLAttributes<HTMLDivElement>["className"];
 };
 
-const HobbyCard: FC<HobbyProps> = ({ className, hobbyProps }) => {
+const HobbyCard: FC<HobbyProps> = ({ className, hobbyProps }: HobbyProps) => {
   const classes = twMerge(
     `basis-[45%] sm:basis-[30%] lg:basis-[21%] border border-primary`,
     className
