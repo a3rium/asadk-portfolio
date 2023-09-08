@@ -45,30 +45,31 @@ const About = () => {
               alt="Photo of me"
             />
           </div>
-          <div className="mx-auto mt-20">
-            <SectionHeading title="skills" />
-            <div className="text-white">
-              <div className="mx-auto flex justify-between flex-wrap gap-4">
-                {skills.map((skill) => {
-                  return <SkillCard key={skill.id} skillProps={skill} />;
-                })}
-              </div>
+        </div>
+
+        <div className="mx-auto mt-20">
+          <SectionHeading title="skills" />
+          <div className="text-white">
+            <div className="mx-auto flex justify-between flex-wrap gap-4">
+              {skills.map((skill) => {
+                return <SkillCard key={skill.id} skillProps={skill} />;
+              })}
             </div>
           </div>
-          <div className="w-full mt-20">
-            <SectionHeading title="hobbies" />
-            <div className="text-white">
-              <div className="mx-auto flex justify-around flex-wrap gap-4">
-                {hobbies.map((hobby) => {
-                  return (
-                    <HobbyCard
-                      className="basis-[45%] sm:basis-[30%] lg:basis-[21%]"
-                      key={hobby.id}
-                      hobbyProps={hobby}
-                    />
-                  );
-                })}
-              </div>
+        </div>
+        <div className="w-full mt-20">
+          <SectionHeading title="hobbies" />
+          <div className="text-white">
+            <div className="mx-auto flex justify-around flex-wrap gap-4">
+              {hobbies.map((hobby) => {
+                return (
+                  <HobbyCard
+                    className="basis-[45%] sm:basis-[30%] lg:basis-[21%]"
+                    key={hobby.id}
+                    hobbyProps={hobby}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
