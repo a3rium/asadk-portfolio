@@ -7,22 +7,22 @@ import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import PageHeading from "@/components/PageHeading/PageHeading";
 
 const Contact = () => {
-  return (
-    <>
-      <Header />
-      <ContentContainer>
-        <PageHeading title="contact-me" />
-        <SectionHeading title="say-hi!" />
-        <div className="pt-5">
-          <ContactForm />
-        </div>
-        {/* <div className="text-white font-medium text-2xl md:text-3xl mt-10">
+	return (
+		<>
+			<Header />
+			<ContentContainer>
+				<PageHeading title="contact-me" />
+				<SectionHeading title="say-hi!" />
+				<div className="pt-5">
+					<ContactForm />
+				</div>
+				{/* <div className="text-white font-medium text-2xl md:text-3xl mt-10">
             <span className="text-secondary">#</span>socials
           </div> */}
-      </ContentContainer>
-      <Footer />
-    </>
-  );
+			</ContentContainer>
+			<Footer />
+		</>
+	);
 };
 
 export default Contact;

@@ -8,30 +8,30 @@ import PageHeading from "@/components/PageHeading/PageHeading";
 import ProjectGrid from "@/components/ProjectGrid/ProjectGrid";
 
 const Projects = () => {
-  return (
-    <>
-      <Header />
-      <ContentContainer>
-        <PageHeading title="projects" />
+	return (
+		<>
+			<Header />
+			<ContentContainer>
+				<PageHeading title="projects" />
 
-        <SectionHeading title="completed-projects" />
-        <ProjectGrid
-          projects={projects}
-          type="showcase"
-          type2="complete"
-          className="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-        />
+				<SectionHeading title="completed-projects" />
+				<ProjectGrid
+					projects={projects}
+					type="showcase"
+					type2="complete"
+					className="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+				/>
 
-        <SectionHeading title="play-pen" />
-        <ProjectGrid
-          projects={projects}
-          type="incomplete"
-          className="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-        />
-      </ContentContainer>
-      <Footer />
-    </>
-  );
+				<SectionHeading title="play-pen" />
+				<ProjectGrid
+					projects={projects}
+					type="incomplete"
+					className="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+				/>
+			</ContentContainer>
+			<Footer />
+		</>
+	);
 };
 
 export default Projects;

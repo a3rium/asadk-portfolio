@@ -6,14 +6,14 @@ import Skills from "@/components/Skills/Skills";
 import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Projects />
-      <Skills />
-      <About />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Hero />
+			<Projects />
+			<Skills />
+			<About />
+			<Footer />
+		</>
+	);
 }

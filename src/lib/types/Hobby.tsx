@@ -1,4 +1,4 @@
 export type Hobby = {
-  id: number;
-  title: string;
+	id: number;
+	title: string;
 };
