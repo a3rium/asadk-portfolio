@@ -2,8 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { titles } from "@/data/about";
 
-let titleLength: number;
-
 const Typewriter = () => {
   const [title, setTitle] = useState<string>();
   const [typedText, setTypedText] = useState<string>();
@@ -25,8 +23,7 @@ const Typewriter = () => {
           newTitle = titles[index];
         }
       } while (newTitle === lastTitle);
-      titleLength = newTitle.length;
-      timer = titleLength * time_per_char + 250;
+      timer = newTitle.length * time_per_char + 250;
       setTitle(newTitle);
       lastTitle = newTitle;
       title_picker.current = window.setTimeout(changeTitle, timer);
@@ -65,7 +62,7 @@ const Typewriter = () => {
 
   return (
     <>
-      <span className="text-secondary font-semibold font-mono overflow-clip whitespace-nowrap border-r-2 animate-blink">
+      <span className="text-secondary font-semibold font-mono overflow-clip border-r-2 animate-blink">
         {typedText}
       </span>
     </>
