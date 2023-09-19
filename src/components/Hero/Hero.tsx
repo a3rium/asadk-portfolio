@@ -17,10 +17,11 @@ const Hero = () => {
 				</div>
 				<div className="sm:px-16 max-w-screen-xl mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
 					<div className="w-10/12 md:w-8/12 mx-auto">
-						<h1 className="font-semibold text-2xl md:text-3xl text-white mb-3">
+						<h1 className="font-semibold text-2xl md:text-3xl text-white mb-3 text-center sm:text-justify">
 							Asad is a{" "}
-							<span className="text-secondary">software developer</span> and{" "}
-							<span className="font-normal inline-block min-[460px]:block sm:inline-block min-[850px]:block">
+							<span className="text-secondary">software developer</span>
+							<span className="text"> and </span>
+							<span className="font-normal block sm:inline-block md:block">
 								{"{ "}
 								<Typewriter />
 								{" }"}

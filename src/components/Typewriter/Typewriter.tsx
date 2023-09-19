@@ -62,7 +62,7 @@ const Typewriter = () => {
 
 	return (
 		<>
-			<span className="text-secondary font-semibold font-mono overflow-clip border-r-2 animate-blink">
+			<span className="text-secondary font-semibold font-mono border-r-2 animate-blink">
 				{typedText}
 			</span>
 		</>
